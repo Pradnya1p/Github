@@ -12,10 +12,10 @@ public class loginpagesample {
 	{
 		PageFactory.initElements(driver, this);
 	}
-	public void clickcreateAccButton()
-	{
-		createnewacc.click();
+// 	public void clickcreateAccButton()
+// 	{
+// 		createnewacc.click();
 		
-	}
+// 	}
 
 }
