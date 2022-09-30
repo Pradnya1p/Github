@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Facebook_RegressionSuite" class="navigator-link">
-              <span class="suite-name border-passed">Facebook RegressionSuite</span>
+              <span class="suite-name border-skipped">Facebook RegressionSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Facebook_RegressionSuite" class="navigator-link ">
-                    <span>C:\Users\Lenovo\eclipse-workspace\MavanProject1\Facebook SIT.xml</span>
+                    <span>C:\Users\Lenovo\git\Github\MavanProject1\Facebook SIT.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods,  1 skipped,  7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Facebook_RegressionSuite" class="hide-methods skipped suite-Facebook_RegressionSuite"> (hide)</a> <!-- hide-methods skipped suite-Facebook_RegressionSuite -->
+                      <a href="#" panel-name="suite-Facebook_RegressionSuite" class="show-methods skipped suite-Facebook_RegressionSuite"> (show)</a> <!-- show-methods skipped suite-Facebook_RegressionSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Facebook_RegressionSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Facebook_RegressionSuite" title="test.VerifyHomePage" class="method navigator-link" hash-for-method="verifyNotificationButton">verifyNotificationButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Facebook_RegressionSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,11 +124,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Facebook_RegressionSuite" title="test.VerifyHomePage" class="method navigator-link" hash-for-method="verifyMessangerButton">verifyMessangerButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Facebook_RegressionSuite" title="test.VerifyHomePage" class="method navigator-link" hash-for-method="verifyNotificationButton">verifyNotificationButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -154,6 +163,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Facebook_RegressionSuite" class="panel Facebook_RegressionSuite">
+          <div class="suite-Facebook_RegressionSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.VerifyHomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNotificationButton">
+                  </a> <!-- verifyNotificationButton -->
+                  <span class="method-name">verifyNotificationButton</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Log Out&apos;]&quot;}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRADNYA&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 066086e47db6218c49467d1f1ea48851
+*** Element info: {Using=xpath, value=//span[text()=&apos;Log Out&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at fbpages.HomePage.clickLogoutButton(HomePage.java:62)
+	at test.VerifyHomePage.logOutFromApplication(VerifyHomePage.java:137)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Facebook_RegressionSuite-class-skipped -->
           <div class="suite-Facebook_RegressionSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -172,13 +225,6 @@
                   <a name="verifyMessangerButton">
                   </a> <!-- verifyMessangerButton -->
                   <span class="method-name">verifyMessangerButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyNotificationButton">
-                  </a> <!-- verifyNotificationButton -->
-                  <span class="method-name">verifyNotificationButton</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -229,7 +275,7 @@
         </div> <!-- panel Facebook_RegressionSuite -->
         <div panel-name="test-xml-Facebook_RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\eclipse-workspace\MavanProject1\Facebook SIT.xml</span>
+            <span class="header-content">C:\Users\Lenovo\git\Github\MavanProject1\Facebook SIT.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -294,40 +340,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyMessangerButton')
 data.setCell(0, 2, 'test.VerifyHomePage')
-data.setCell(0, 3, 31806);
+data.setCell(0, 3, 19864);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyVisitHelpCenterButton')
+data.setCell(1, 1, 'verifyReturnToMessangerButton')
 data.setCell(1, 2, 'test.VerifyRoomPageButton')
-data.setCell(1, 3, 15562);
+data.setCell(1, 3, 9362);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyNotificationButton')
 data.setCell(2, 2, 'test.VerifyHomePage')
-data.setCell(2, 3, 9341);
+data.setCell(2, 3, 4281);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyMessangerButton')
 data.setCell(3, 2, 'test.VerifyHomePage')
-data.setCell(3, 3, 5459);
+data.setCell(3, 3, 4268);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyNotificationButton')
-data.setCell(4, 2, 'test.VerifyHomePage')
-data.setCell(4, 3, 4130);
+data.setCell(4, 1, 'verifyVisitHelpCenterButton')
+data.setCell(4, 2, 'test.VerifyRoomPageButton')
+data.setCell(4, 3, 3470);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyReturnToMessangerButton')
 data.setCell(5, 2, 'test.VerifyRoomPageButton')
-data.setCell(5, 3, 3415);
+data.setCell(5, 3, 3241);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyReturnToMessangerButton')
+data.setCell(6, 1, 'verifyVisitHelpCenterButton')
 data.setCell(6, 2, 'test.VerifyRoomPageButton')
-data.setCell(6, 3, 2625);
+data.setCell(6, 3, 3180);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyVisitHelpCenterButton')
-data.setCell(7, 2, 'test.VerifyRoomPageButton')
-data.setCell(7, 3, 2244);
+data.setCell(7, 1, 'verifyNotificationButton')
+data.setCell(7, 2, 'test.VerifyHomePage')
+data.setCell(7, 3, 0);
 window.suiteTableData['Facebook_RegressionSuite']= { tableData: data, tableDiv: 'times-div-Facebook_RegressionSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-Facebook_RegressionSuite">
               </div> <!-- times-div-Facebook_RegressionSuite -->
             </div> <!-- times-div -->
@@ -363,219 +409,209 @@ return data;
               <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Chrome)</span>
-                <span class="method-start">6254 ms</span>
+                <span class="method-start">16135 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">17982 ms</span>
+              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">9619 ms</span>
+                <span class="method-start">17982 ms</span>
               </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMObjects</span>
-                <span class="method-start">9619 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openurl_openhomepage</span>
-                <span class="method-start">9890 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openurl_openroompage</span>
-                <span class="method-start">10249 ms</span>
+                <span class="method-start">18423 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyReturnToMessangerButton</span>
-                <span class="method-start">23174 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openurl_openhomepage</span>
+                <span class="method-start">18423 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMessangerButton</span>
-                <span class="method-start">24139 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">aftermethod([TestResult name=verifyReturnToMessangerButton status=SUCCESS method=VerifyRoomPageButton.verifyRetu...)</span>
-                <span class="method-start">25810 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openurl_openroompage</span>
-                <span class="method-start">25815 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyVisitHelpCenterButton</span>
-                <span class="method-start">32650 ms</span>
+                <span class="method-start">34296 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">aftermethod([TestResult name=verifyVisitHelpCenterButton status=SUCCESS method=VerifyRoomPageButton.verifyVisitH...)</span>
-                <span class="method-start">48217 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">clearObjects</span>
-                <span class="method-start">48221 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">logOutFromApplication([TestResult name=verifyMessangerButton status=SUCCESS method=VerifyHomePage.verifyMessangerButton()[...)</span>
-                <span class="method-start">55947 ms</span>
+                <span class="method-start">54190 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openurl_openhomepage</span>
-                <span class="method-start">64727 ms</span>
+                <span class="method-start">64821 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNotificationButton</span>
-                <span class="method-start">66384 ms</span>
+                <span class="method-start">64826 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logOutFromApplication([TestResult name=verifyNotificationButton status=SUCCESS method=VerifyHomePage.verifyNotificationBut...)</span>
-                <span class="method-start">75732 ms</span>
+                <span class="method-name">logOutFromApplication</span>
+                <span class="method-start">64839 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearObject</span>
-                <span class="method-start">78264 ms</span>
+                <span class="method-start">64848 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyReturnToMessangerButton</span>
+                <span class="method-start">68110 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftermethod([TestResult name=verifyReturnToMessangerButton status=SUCCESS method=VerifyRoomPageButton.verifyRetu...)</span>
+                <span class="method-start">71355 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openurl_openroompage</span>
+                <span class="method-start">71357 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVisitHelpCenterButton</span>
+                <span class="method-start">98343 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftermethod([TestResult name=verifyVisitHelpCenterButton status=SUCCESS method=VerifyRoomPageButton.verifyVisitH...)</span>
+                <span class="method-start">101816 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">101819 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">78315 ms</span>
+                <span class="method-start">101851 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">83764 ms</span>
+                <span class="method-start">101854 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Firefox)</span>
-                <span class="method-start">88053 ms</span>
+                <span class="method-start">102333 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Firefox)</span>
-                <span class="method-start">114340 ms</span>
+                <span class="method-start">145509 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">162227 ms</span>
+              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">124612 ms</span>
+                <span class="method-start">162227 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMObjects</span>
-                <span class="method-start">124617 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">openurl_openroompage</span>
+                <span class="method-start">162230 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openurl_openhomepage</span>
-                <span class="method-start">124617 ms</span>
+                <span class="method-start">162258 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openurl_openroompage</span>
-                <span class="method-start">124625 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyReturnToMessangerButton</span>
-                <span class="method-start">141027 ms</span>
+                <span class="method-start">192602 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">aftermethod([TestResult name=verifyReturnToMessangerButton status=SUCCESS method=VerifyRoomPageButton.verifyRetu...)</span>
-                <span class="method-start">144445 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openurl_openroompage</span>
-                <span class="method-start">144449 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyMessangerButton</span>
-                <span class="method-start">145166 ms</span>
+                <span class="method-start">194290 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyVisitHelpCenterButton</span>
-                <span class="method-start">149778 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">logOutFromApplication([TestResult name=verifyMessangerButton status=SUCCESS method=VerifyHomePage.verifyMessangerButton()[...)</span>
-                <span class="method-start">150628 ms</span>
+                <span class="method-start">198561 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
+                <span class="method-name">aftermethod([TestResult name=verifyReturnToMessangerButton status=SUCCESS method=VerifyRoomPageButton.verifyRetu...)</span>
+                <span class="method-start">201968 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openurl_openroompage</span>
+                <span class="method-start">201972 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVisitHelpCenterButton</span>
+                <span class="method-start">206915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyVisitHelpCenterButton status=SUCCESS method=VerifyRoomPageButton.verifyVisitH...)</span>
-                <span class="method-start">152025 ms</span>
+                <span class="method-start">210098 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearObjects</span>
-                <span class="method-start">152027 ms</span>
+                <span class="method-start">210100 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openurl_openhomepage</span>
-                <span class="method-start">158954 ms</span>
+                <span class="method-start">211755 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNotificationButton</span>
-                <span class="method-start">168073 ms</span>
+                <span class="method-start">222510 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOutFromApplication([TestResult name=verifyNotificationButton status=SUCCESS method=VerifyHomePage.verifyNotificationBut...)</span>
-                <span class="method-start">172205 ms</span>
+                <span class="method-start">226793 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearObject</span>
-                <span class="method-start">175128 ms</span>
+                <span class="method-start">229327 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">175130 ms</span>
+                <span class="method-start">229329 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyRoomPageButton</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">178963 ms</span>
+                <span class="method-start">240620 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
