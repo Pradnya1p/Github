@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import fbpages.CreatenewAccpage;
-import fbpages.loginpagesample;
+import fbpages.SamplePage;
 
 public class Testclass_POM {
 public static void main(String[] args)  {
@@ -15,7 +15,7 @@ System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 	driver.get("https://www.facebook.com/");
 	//driver.manage().window().maximize();
 
-	loginpagesample login=new loginpagesample(driver);
+	SamplePage login=new SamplePage(driver);
 	login.clickcreateAccButton();
 	
 	CreatenewAccpage createacc=new CreatenewAccpage(driver);
